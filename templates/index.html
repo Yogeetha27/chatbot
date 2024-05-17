@@ -1,0 +1,83 @@
+<!-- templates/index.html -->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Image Upload</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Image Upload</h1>-->
+<!--    <form action="/upload" method="post" enctype="multipart/form-data">-->
+<!--        <input type="file" name="file" accept=".png, .jpg, .jpeg, .gif">-->
+<!--        <input type="submit" value="Upload">-->
+<!--    </form>-->
+<!--</body>-->
+
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <style>
+        h1
+        {
+            color: brown;
+            text-shadow: 2px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        body
+        {
+            margin: 0;
+            align-items: center;
+            text-align: center;
+        }
+        .container
+        {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 300;
+
+        }
+        form
+        {
+            border:2px solid black;
+            width: 70vh;
+            height: 25vh;
+            justify-content: center;
+            margin-left: 420px;
+        }
+        .sum
+        {
+            background-color: rgb(5, 24, 56);
+            height: 30px;
+            width:80px;
+            color: white;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Predict Skin diseases</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <br>
+        <br>
+        <input type="file" name="file" accept=".png, .jpg, .jpeg, .gif">
+       <br>
+        <br>
+        <input type="submit" class="sum"value="classify">
+        <br>
+        <br>
+    </form>
+</div>
+<div id="result"></div>
+</body>
+
+</html>
